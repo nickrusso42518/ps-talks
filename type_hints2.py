@@ -1,12 +1,13 @@
 #!/usr/bin/env python
+# Python 3.7/3.9 Complex Type Hinting
 
-from typing import Union, Optional, List, Dict
+from typing import Union, Optional
 from random import randint
 
 class Roster:
     def __init__(
         self,
-        names: Union[str, List[str]],
+        names: Union[str, list[str]],
         delim: Optional[str] = "\n"
     ) -> None:
         if isinstance(names, str):
@@ -14,7 +15,7 @@ class Roster:
         elif isinstance(names, list):
             self.names = names
 
-    def generate_ids(self) -> Dict[str, int]:
+    def generate_ids(self) -> dict[str, int]:
         return {n: randint(0,255) for n in self.names}
 
 

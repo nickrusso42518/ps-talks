@@ -1,4 +1,5 @@
 #!/usr/bin/env
+# Python 3.8 f-string equal-sign for debugging
 
 def factorial(n):
     total = 0

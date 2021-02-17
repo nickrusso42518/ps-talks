@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# Python 3.7 Simple Type Hinting
 
 class Person:
     def __init__(self, name: str, age: int) -> None:

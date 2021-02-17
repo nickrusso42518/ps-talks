@@ -1,4 +1,5 @@
 #!/usr/bin/env
+# Boilerplate needed to print variable names
 
 def factorial(n):
     total = 0
